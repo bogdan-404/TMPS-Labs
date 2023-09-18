@@ -3,11 +3,18 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         try {
+            var ipAddressRandomGenerator = new IpAddressRandomGenerator();
+            var ip = ipAddressRandomGenerator.getIpAddress();
+            System.out.println(ip);
+        } catch (IOException errorRandom) {
+            errorRandom.printStackTrace();
+        }
+        try {
             var ipifyApi = new IpifyApi("https://api.ipify.org?format=json");
             var ip = ipifyApi.getIpAddress();
             System.out.println(ip);
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException errorIpify) {
+            errorIpify.printStackTrace();
         }
 
         var ipinfoApi = new IpinfoApi("https://ipinfo.io/");
@@ -19,9 +26,8 @@ public class Main {
             System.out.println(ispInformation);
             var ipAddressDetails = ipinfoApi.getIPAddressDetails(ip);
             System.out.println(ipAddressDetails);
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException errorIpinfo) {
+            errorIpinfo.printStackTrace();
         }
-
     }
 }

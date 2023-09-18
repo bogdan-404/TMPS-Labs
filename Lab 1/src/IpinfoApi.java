@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class IpinfoApi extends Api {
+public class IpinfoApi extends Api implements IpInfoInterface {
     public IpinfoApi(String apiBaseUrl) {
         super(apiBaseUrl);
     }

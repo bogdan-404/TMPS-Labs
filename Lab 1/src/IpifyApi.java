@@ -10,6 +10,4 @@ public class IpifyApi extends Api implements IpAddressGenerator {
         String response = this.sendGetRequest(null);
         return response.toString();
     }
-
 }
-

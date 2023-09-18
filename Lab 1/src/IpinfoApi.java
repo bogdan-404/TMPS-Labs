@@ -12,12 +12,4 @@ public class IpinfoApi extends Api implements IpInfoInterface {
     public String getISPInformation(String ipAddress) throws IOException {
         return this.sendGetRequest(ipAddress + "/org");
     }
-
-    public String getIPAddressDetails(String ipAddress) throws IOException {
-        return this.sendGetRequest(ipAddress);
-    }
-
-
-
-
 }

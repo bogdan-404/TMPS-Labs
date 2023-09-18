@@ -5,5 +5,4 @@ public interface IpInfoInterface {
 
     String getISPInformation(String ipAddress) throws IOException;
 
-    String getIPAddressDetails(String ipAddress) throws IOException;
 }

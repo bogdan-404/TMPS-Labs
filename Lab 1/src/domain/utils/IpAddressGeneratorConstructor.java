@@ -1,3 +1,4 @@
+package domain.utils;
 import java.io.IOException;
 
 public class IpAddressGeneratorConstructor implements IpAddressGenerator {

@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+import domain.api.*;
+import domain.utils.*;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

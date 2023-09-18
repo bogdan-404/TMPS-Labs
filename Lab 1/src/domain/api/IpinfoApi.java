@@ -1,3 +1,4 @@
+package domain.api;
 import java.io.IOException;
 
 public class IpinfoApi extends Api implements IpInfoInterface {

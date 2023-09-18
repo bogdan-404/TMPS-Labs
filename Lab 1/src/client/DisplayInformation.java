@@ -1,5 +1,8 @@
 import java.io.IOException;
 
+import domain.api.IpInfoInterface;
+import domain.utils.IpAddressGenerator;
+
 public class DisplayInformation {
     private IpAddressGenerator ipAddressGenerator;
     private IpInfoInterface ipInformation;

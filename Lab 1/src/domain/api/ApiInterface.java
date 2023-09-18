@@ -1,3 +1,4 @@
+package domain.api;
 import java.io.IOException;
 
 public interface ApiInterface {
